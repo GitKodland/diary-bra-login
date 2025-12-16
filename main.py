@@ -29,7 +29,7 @@ class Card(db.Model):
 
 
 # -------------------------
-# Tarefa #1
+# Atividade #1
 # Criar a tabela User
 # -------------------------
 class User(db.Model):
@@ -52,7 +52,7 @@ def login():
         form_login = request.form['email']
         form_password = request.form['password']
 
-        # Tarefa #4. Verificação do usuário
+        # Atividade #4. Verificação do usuário
         users_db = User.query.all()
 
         for user in users_db:
@@ -75,7 +75,7 @@ def reg():
         email = request.form['email']
         password = request.form['password']
 
-        # Tarefa #3. Salvar usuário no banco
+        # Atividade #3. Salvar usuário no banco
         user = User(email=email, password=password)
         db.session.add(user)
         db.session.commit()
@@ -90,7 +90,7 @@ def reg():
 # -------------------------
 @app.route('/index')
 def index():
-    # Tarefa #4. Mostrar apenas os cards do usuário logado
+    # Atividade #4. Mostrar apenas os cards do usuário logado
     email = session.get('user_email')
     cards = Card.query.filter_by(user_email=email).all()
     return render_template('index.html', cards=cards)
