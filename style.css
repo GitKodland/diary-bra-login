@@ -4,12 +4,12 @@ body::-webkit-scrollbar {
   }
   
   body::-webkit-scrollbar-track {
-    background: #0F172A;        /* the colour of the tracker zone */
+    background: #0F172A;        /* a cor da zona de rastreamento */
   }
   
   body::-webkit-scrollbar-thumb {
-    background-color: rgba(30, 41, 59, 0.4);    /* the colour of the scrollbar */
-    border-radius: 20px;       /* the roundness of the scrollbar */
+    background-color: rgba(30, 41, 59, 0.4);    /* a cor da barra de rolagem */
+    border-radius: 20px;       /* a forma arredondada da barra de rolagem */
     border: none;
   }
 
@@ -293,4 +293,5 @@ ul {
 
 .login__link:hover {
     color: rgba(14, 165, 233, 1);
+
 }
