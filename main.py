@@ -123,7 +123,7 @@ def form_create():
         subtitle = request.form['subtitle']
         text = request.form['text']
 
-        # Assignment #4. Criar card em nome do usuário logado
+        # Atividade #4. Criar card em nome do usuário logado
         email = session['user_email']
         card = Card(
             title=title,
