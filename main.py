@@ -67,7 +67,7 @@ def login():
 
 
 # -------------------------
-# Registro
+# # Registro
 # -------------------------
 @app.route('/reg', methods=['GET', 'POST'])
 def reg():
